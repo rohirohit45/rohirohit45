@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #ebf2ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 12px;
+  background-color: white;
+}
+
+.navbar_brand {
+  width: 100px;
+}
+
+.navbar_logo {
+  width : 100%;
+}
+
+.button_primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 50%,
+    #ff512f 26%,
+    #dd2476 50%,
+    #ff512f 100%,
+    #dd2476 76%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    background-size: 200%;
+    transition: 0.7s;
+    box-shadow: 0px 25px 50px -12px rgb(0 0 0 /20%);
+}
+
+.container{
+  max-width: 100%;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.hero_image_container {
+  width: 100%;
+}
+
+.hero_img {
+  width :100%;
+  border-radius: 9px;
+  box-shadow: 0px 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero_text {
+    font-size: 32px;
+    margin: 10px 5px;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+.food_card_menu_container {
+  width: 100%;
+  margin-top:20px;
+}
+
+.food_card_menu_container_text {
+  margin: 40px 10px 20px 10px;
+  text-align: center;
+  font-weight: 900;
+  color: #1d3557;
+  font-size: 32px;
+}
+
+.food_card_menu_list {
+  width: 100%;
+}
+
+.food_card_description {
+  margin-top: 0px;
+  background-color: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+}
+
+.food_image {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.food_card {
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+.view_div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.view_button {
+  font-size: 18px;
+  border: none;
+  padding: 15px;
+  color: #FFFFFF;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 100%,
+    #ff512f 51%
+    );
+}
+
+.restaurants_list {
+  margin-top: 60px;
+  max-width: 100%;
+  display: block;
+}
+
+.restaurants_list_text {
+  font-weight: 800;
+  font-size: 24px;
+  color: #1d3557;
+}
+
+.restaurants_list_imgs_container {
+  max-width: 100%;
+}
+
+.row1 {
+  justify-content: space-between;
+  margin-top: 10px;
+  max-width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+.row2 {
+  margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+}
+
+.restaurants_list_imgs_card {
+  padding-right: 10px;
+}
+
+.restaurants_list_img_card_img1 {
+  border-radius: 4%;
+  width: 150px;
+  height: 80px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.restaurants_list_img_card_img2 {
+  border-radius: 4%;
+  width: 175px;
+  height: 100px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.restaurants_list_img_card_img3 {
+  border-radius: 4%;
+  width: 185px;
+  height: 100px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.restaurants_list_img_card_img4 {
+  border-radius: 4%;
+  padding-left: 10px;
+  width: 139px;
+  height: 80px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .navbar_brand {
+    width: 130px;
+  }
+
+  .food_card {
+      width: 33.33%;
+      background-color: rgba(0,0,0,0);
+  }
+
+  .food_card_menu_container_text {
+      margin-bottom: 26px;
+  }
+
+  #pizza_card {
+    margin-top: -20px;
+  }
+
+  .view_div {
+    margin-top: auto;
+  }
+
+  .view_button {
+    z-index: +1;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .food_card_menu_list {
+    display: flex;
+    padding-top: 16px;
+  }
+
+  .food_card_menu_container {
+    margin-top: 70px;
+    position: relative;
+  }
+
+  .food_card_menu_graditient {
+    margin-top: -10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 100%,
+      #ff512f 51%
+      );
+    z-index: -1;
+    transform: skewY(-5deg);
+    height: 120%;
+  }
+
+  .button_primary {
+    padding: 18px;
+    font-size: 19px;
+    border-radius: 9px;
+    font-weight: 800;
+  }
+  .hero_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+  .hero_text{
+    font-size: 40px;
+  }
+  .hero_img {
+    margin: 32px 0 0;
+    width: 100%;
+    height: 407px;
+  }
+  .hero_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #pizza_card {
+    margin-top: -23px;
+  }
+}
+
+.button_primary:hover {
+  background-position: right;
+  cursor: pointer;
+}
+
+  .view_button:hover {
+    cursor :pointer;
+  }
